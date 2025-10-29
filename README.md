@@ -55,3 +55,33 @@ The Decorator Pattern defines a way to attach new responsibilities to objects dy
 - Flexible composition: combine multiple features as needed.
 - Reusability: decorators can be reused across different objects.
 - Separation of concerns: keeps core logic clean and focused.
+
+---
+
+## 🏭 Simple Factory
+
+### What is the Simple Factory Pattern?
+
+The Simple Factory Pattern is a creational pattern with the following purpose:
+
+👉 “Centralize the creation logic of objects, allowing the client to request an instance by specifying a type, without knowing the details of how each object is constructed.”
+
+🧠 **In practical terms:**
+
+- The client requests an object by passing a type or key (e.g., "email" or "sms") to the factory.
+- The factory function decides which concrete type to instantiate and returns it as a common interface.
+- The client uses the returned object through the interface, without worrying about its internal construction.
+- The client still needs to know the available types to request.
+
+📘 **Short (formal) definition:**
+
+The Simple Factory Pattern centralizes object creation in a single function or type, which returns instances of different concrete types based on input parameters, all conforming to a common interface.
+
+💬 **Why is it useful?**
+
+- Encapsulates instantiation logic, keeping client code cleaner.
+- Reduces duplication: object creation code is in one place.
+- Makes it easier to add new types: just update the factory.
+- Promotes use of interfaces, increasing flexibility and testability.
+
+---
