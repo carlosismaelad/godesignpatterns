@@ -141,3 +141,31 @@ The Abstract Factory Pattern defines an interface for creating families of relat
 - Supports the Open/Closed Principle: add new factories and product families without modifying existing code.
 
 ---
+
+# 🏗️ Builder
+
+### What is the Builder Pattern?
+
+The Builder Pattern is a creational pattern with the following purpose:
+
+👉 “Separate the construction of a complex object from its representation, allowing the same construction process to create different representations.”
+
+🧠 **In practical terms:**
+
+- Used when an object has many optional fields or requires step-by-step construction.
+- The builder provides methods to set each field or part, often returning itself for method chaining (fluent interface).
+- The client can configure only the desired fields, in any order, and then call `Build()` to get the final object.
+- Improves code readability and maintainability, especially for objects with many parameters.
+
+📘 **Short (formal) definition:**
+
+The Builder Pattern defines a separate builder object that constructs a complex object step by step, allowing different representations and configurations without a telescoping constructor.
+
+💬 **Why is it useful?**
+
+- Avoids constructors with many parameters (telescoping constructors).
+- Makes object creation flexible and readable.
+- Allows validation or custom logic during the build process.
+- Supports immutability by returning fully constructed objects.
+
+---
