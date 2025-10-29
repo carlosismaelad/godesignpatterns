@@ -169,3 +169,24 @@ The Builder Pattern defines a separate builder object that constructs a complex 
 - Supports immutability by returning fully constructed objects.
 
 ---
+
+# 📚 TODO: Next Design Patterns to Study
+
+- Singleton
+- Adapter
+- Facade
+- Proxy
+- Composite
+- Bridge
+- Strategy
+- Observer
+- Command
+- Template Method
+- Chain of Responsibility
+- State
+- Mediator
+- Memento
+- Iterator
+- Visitor
+
+---
