@@ -113,3 +113,31 @@ The Factory Method Pattern defines an interface for creating objects, allowing s
 - Supports the Open/Closed Principle: add new factories/products without modifying existing code.
 
 ---
+
+# 🏢 Abstract Factory
+
+### What is the Abstract Factory Pattern?
+
+The Abstract Factory Pattern is a creational pattern with the following purpose:
+
+👉 “Provide an interface for creating families of related or dependent objects without specifying their concrete classes.”
+
+🧠 **In practical terms:**
+
+- Allows the creation of multiple related products (e.g., Notifier and Logger) that are designed to work together.
+- The client uses only the abstract factory and product interfaces, never the concrete types.
+- Each concrete factory produces a family of products that are compatible with each other.
+- Makes it easy to switch entire families of products by changing the factory.
+
+📘 **Short (formal) definition:**
+
+The Abstract Factory Pattern defines an interface for creating families of related objects, letting concrete factories produce objects that belong together, without exposing their concrete classes to the client.
+
+💬 **Why is it useful?**
+
+- Ensures consistency among products that are designed to be used together.
+- Decouples client code from concrete classes, increasing flexibility and maintainability.
+- Makes it easy to introduce new families of products without changing client code.
+- Supports the Open/Closed Principle: add new factories and product families without modifying existing code.
+
+---
