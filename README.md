@@ -85,3 +85,31 @@ The Simple Factory Pattern centralizes object creation in a single function or t
 - Promotes use of interfaces, increasing flexibility and testability.
 
 ---
+
+# 🏭 Factory Method
+
+### What is the Factory Method Pattern?
+
+The Factory Method Pattern is a creational pattern with the following purpose:
+
+👉 “Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.”
+
+🧠 **In practical terms:**
+
+- The client works only with factory interfaces and product interfaces, not with concrete types.
+- Each concrete factory knows how to create a specific product (or family of products).
+- To change the product, the client just switches the factory, not the creation logic or parameters.
+- Promotes extensibility: new product types require only new factories, not changes to client code.
+
+📘 **Short (formal) definition:**
+
+The Factory Method Pattern defines an interface for creating objects, allowing subclasses or concrete factories to decide which class to instantiate, thus decoupling object creation from usage.
+
+💬 **Why is it useful?**
+
+- Decouples object creation from usage, following the Dependency Inversion Principle.
+- Makes it easy to introduce new product types without changing client code.
+- Encourages use of interfaces and abstraction, increasing flexibility and testability.
+- Supports the Open/Closed Principle: add new factories/products without modifying existing code.
+
+---
